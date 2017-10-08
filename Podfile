@@ -7,7 +7,7 @@ target 'Quiz' do
 
   # Pods for Quiz
   pod "SDWebImage" 
-
+  pod 'SVProgressHUD'
 
   target 'QuizTests' do
     inherit! :search_paths
