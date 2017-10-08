@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // 加载数据
+        loadData()
+    }
+    
+    
+    func loadData()  {
+
+        SVProgressHUD.show()
+        DTQuizManager.shared.loadQuiz(successBlock: {
+            SVProgressHUD.dismiss()
+            
+        }, failureBlock: {_ in
+            SVProgressHUD.showError(withStatus: "load error")
+        })
     }
 
 

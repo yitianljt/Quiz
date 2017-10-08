@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43044E39B0486CA16B236E8C /* Pods_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE07FFF98869C6622FC99198 /* Pods_Quiz.framework */; };
+		A93AAB851F8AE06E00BCC20C /* DTQuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AAB841F8AE06E00BCC20C /* DTQuizManager.swift */; };
 		A97FBF231F8AD7D100FFDC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */; };
 		A97FBF251F8AD7D100FFDC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FBF241F8AD7D100FFDC66 /* ViewController.swift */; };
 		A97FBF281F8AD7D100FFDC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97FBF261F8AD7D100FFDC66 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		9101D70844C16B6D34CC7E60 /* Pods-Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz/Pods-Quiz.release.xcconfig"; sourceTree = "<group>"; };
 		A5B957C94B37F401B19F59DA /* Pods-QuizUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizUITests/Pods-QuizUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6FEE9A8236E68C0BFA5DA56 /* Pods-Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz/Pods-Quiz.debug.xcconfig"; sourceTree = "<group>"; };
+		A93AAB841F8AE06E00BCC20C /* DTQuizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTQuizManager.swift; sourceTree = "<group>"; };
+		A93AAB861F8AE45500BCC20C /* Quiz-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Quiz-bridge.h"; sourceTree = "<group>"; };
 		A97FBF1F1F8AD7D100FFDC66 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97FBF241F8AD7D100FFDC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		A93AAB821F8AE00900BCC20C /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				A93AAB841F8AE06E00BCC20C /* DTQuizManager.swift */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -146,6 +150,7 @@
 				A97FBF291F8AD7D100FFDC66 /* Assets.xcassets */,
 				A97FBF2B1F8AD7D100FFDC66 /* LaunchScreen.storyboard */,
 				A97FBF2E1F8AD7D100FFDC66 /* Info.plist */,
+				A93AAB861F8AE45500BCC20C /* Quiz-bridge.h */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93AAB851F8AE06E00BCC20C /* DTQuizManager.swift in Sources */,
 				A97FBF251F8AD7D100FFDC66 /* ViewController.swift in Sources */,
 				A97FBF231F8AD7D100FFDC66 /* AppDelegate.swift in Sources */,
 			);
@@ -620,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintao.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quiz/Quiz-bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -634,6 +641,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintao.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quiz/Quiz-bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
