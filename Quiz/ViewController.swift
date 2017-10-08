@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         DTQuizManager.shared.loadQuiz(successBlock: {
             SVProgressHUD.dismiss()
             
+
+            print(view!)
         }, failureBlock: {_ in
             SVProgressHUD.showError(withStatus: "load error")
         })

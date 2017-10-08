@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43044E39B0486CA16B236E8C /* Pods_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE07FFF98869C6622FC99198 /* Pods_Quiz.framework */; };
 		A93AAB851F8AE06E00BCC20C /* DTQuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AAB841F8AE06E00BCC20C /* DTQuizManager.swift */; };
+		A93AAB891F8AE90E00BCC20C /* zquestions.json in Resources */ = {isa = PBXBuildFile; fileRef = A93AAB881F8AE90E00BCC20C /* zquestions.json */; };
 		A97FBF231F8AD7D100FFDC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */; };
 		A97FBF251F8AD7D100FFDC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FBF241F8AD7D100FFDC66 /* ViewController.swift */; };
 		A97FBF281F8AD7D100FFDC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97FBF261F8AD7D100FFDC66 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		A6FEE9A8236E68C0BFA5DA56 /* Pods-Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz/Pods-Quiz.debug.xcconfig"; sourceTree = "<group>"; };
 		A93AAB841F8AE06E00BCC20C /* DTQuizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTQuizManager.swift; sourceTree = "<group>"; };
 		A93AAB861F8AE45500BCC20C /* Quiz-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Quiz-bridge.h"; sourceTree = "<group>"; };
+		A93AAB881F8AE90E00BCC20C /* zquestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zquestions.json; sourceTree = "<group>"; };
 		A97FBF1F1F8AD7D100FFDC66 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97FBF241F8AD7D100FFDC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A93AAB871F8AE90E00BCC20C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A93AAB881F8AE90E00BCC20C /* zquestions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A97FBF161F8AD7D100FFDC66 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		A97FBF211F8AD7D100FFDC66 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				A93AAB871F8AE90E00BCC20C /* Resources */,
 				A93AAB821F8AE00900BCC20C /* Handler */,
 				A93AAB831F8AE00900BCC20C /* View */,
 				A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */,
@@ -303,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93AAB891F8AE90E00BCC20C /* zquestions.json in Resources */,
 				A97FBF2D1F8AD7D100FFDC66 /* LaunchScreen.storyboard in Resources */,
 				A97FBF2A1F8AD7D100FFDC66 /* Assets.xcassets in Resources */,
 				A97FBF281F8AD7D100FFDC66 /* Main.storyboard in Resources */,
