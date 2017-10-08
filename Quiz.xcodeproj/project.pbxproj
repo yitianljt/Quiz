@@ -127,6 +127,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A93AAB8A1F8AECAA00BCC20C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A97FBF161F8AD7D100FFDC66 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +159,7 @@
 		A97FBF211F8AD7D100FFDC66 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				A93AAB8A1F8AECAA00BCC20C /* Model */,
 				A93AAB871F8AE90E00BCC20C /* Resources */,
 				A93AAB821F8AE00900BCC20C /* Handler */,
 				A93AAB831F8AE00900BCC20C /* View */,

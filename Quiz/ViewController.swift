@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     func loadData()  {
 
         SVProgressHUD.show()
-        DTQuizManager.shared.loadQuiz(successBlock: {
+        DTQuizManager.shared.loadQuiz(successBlock: { (quizList) in
             SVProgressHUD.dismiss()
             
 
