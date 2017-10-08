@@ -99,6 +99,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A93AAB821F8AE00900BCC20C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		A93AAB831F8AE00900BCC20C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A97FBF161F8AD7D100FFDC66 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +138,8 @@
 		A97FBF211F8AD7D100FFDC66 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				A93AAB821F8AE00900BCC20C /* Handler */,
+				A93AAB831F8AE00900BCC20C /* View */,
 				A97FBF221F8AD7D100FFDC66 /* AppDelegate.swift */,
 				A97FBF241F8AD7D100FFDC66 /* ViewController.swift */,
 				A97FBF261F8AD7D100FFDC66 /* Main.storyboard */,
@@ -236,6 +252,7 @@
 		A97FBF171F8AD7D100FFDC66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DT;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "jin tao";
