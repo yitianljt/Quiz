@@ -599,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintao.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,6 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Quiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jintao.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,6 +698,7 @@
 				A97FBF491F8AD7D100FFDC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A97FBF4A1F8AD7D100FFDC66 /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -704,6 +707,7 @@
 				A97FBF4C1F8AD7D100FFDC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A97FBF4D1F8AD7D100FFDC66 /* Build configuration list for PBXNativeTarget "QuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +716,7 @@
 				A97FBF4F1F8AD7D100FFDC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
