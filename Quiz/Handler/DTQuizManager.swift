@@ -15,7 +15,7 @@ class DTQuizManager: NSObject {
     static let DTQuizeLoadDataError = 1000;
     
     // 加载
-    func loadQuiz(successBlock: (_ quizList: NSArray) ->(), failureBlock: (_ error: Error)->()) {
+    func loadQuiz(successBlock: (_ quizList: [DTQuestionModel]) ->(), failureBlock: (_ error: Error)->()) {
         
         guard
             let path = Bundle.main.path(forResource: "zquestions.json", ofType: nil),
@@ -28,15 +28,14 @@ class DTQuizManager: NSObject {
         }
         
     
-        var result = [AnyObject]()
+        var result = [DTQuestionModel]()
         // 构造数组
-        for (_, value) in dict! {
-            result.append(value)
+        for (key, value) in dict! {
+            let model = DTQuestionModel.init(key: key, answers: value as! [String])
+            result.append(model)
         }
-        
-        
-        
-        successBlock(result as NSArray)
+
+        successBlock(result)
     }
     
     
