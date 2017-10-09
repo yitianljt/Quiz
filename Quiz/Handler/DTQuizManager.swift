@@ -11,7 +11,7 @@ import UIKit
 class DTQuizManager: NSObject {
     static let shared = DTQuizManager()
     
-    // 错误
+    // error code
     static let DTQuizeLoadDataError = 1000;
     
     // 加载
@@ -29,7 +29,7 @@ class DTQuizManager: NSObject {
         
     
         var result = [DTQuestionModel]()
-        // 构造数组
+        // 构造results
         for (key, value) in dict! {
             let model = DTQuestionModel.init(key: key, answers: value as! [String])
             result.append(model)
