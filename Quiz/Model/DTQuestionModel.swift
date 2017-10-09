@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DTQuestionModel: NSObject {
     
     let maxAswerCount = 4;
@@ -25,7 +26,9 @@ class DTQuestionModel: NSObject {
     // 答案
     var aswers: [String]{
         get{
-            return self.shuffleAns();
+            let array = orginalAnswers as [AnyObject]
+            
+            return array.shuffleAns() as! [String];
         }
     }
     

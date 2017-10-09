@@ -27,7 +27,7 @@ class DTQuizManager: NSObject {
             return
         }
         
-    
+                
         var result = [DTQuestionModel]()
         // 构造results
         for (key, value) in dict! {

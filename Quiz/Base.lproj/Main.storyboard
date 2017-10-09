@@ -100,11 +100,14 @@
                     </view>
                     <connections>
                         <outlet property="FourthImage" destination="jNW-Ni-OAX" id="7az-1a-7lK"/>
-                        <outlet property="RestartBtn" destination="H2m-s1-Xh8" id="SFW-vI-GxQ"/>
                         <outlet property="StartBtn" destination="SHJ-4V-pma" id="PZ3-kj-GxK"/>
                         <outlet property="SubmitBtn" destination="Mof-J2-CaS" id="gKM-e3-uQd"/>
                         <outlet property="firstImage" destination="zAC-ni-jrC" id="uex-GU-zQH"/>
+                        <outlet property="fourthImage" destination="jNW-Ni-OAX" id="fWJ-6v-iFg"/>
+                        <outlet property="restartBtn" destination="H2m-s1-Xh8" id="WLA-IC-nKJ"/>
                         <outlet property="secondImage" destination="eh2-4w-ejG" id="Yjs-Xc-o7P"/>
+                        <outlet property="startBtn" destination="SHJ-4V-pma" id="Niu-JX-JTz"/>
+                        <outlet property="submitBtn" destination="Mof-J2-CaS" id="SNa-JS-MOL"/>
                         <outlet property="thirdImage" destination="Q5T-PW-byf" id="yFa-sh-uQZ"/>
                         <outlet property="titleLabel" destination="1Z2-Au-rX4" id="MOG-bz-9XU"/>
                     </connections>

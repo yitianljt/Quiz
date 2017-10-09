@@ -10,6 +10,6 @@
 #define Quiz_bridge_h
 
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* Quiz_bridge_h */
